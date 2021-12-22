@@ -1,9 +1,9 @@
 ## Robot教程篇 Part 14：来尝试一下脚本编辑器的一些便利功能
 
-在我们迄今为止创建的脚本中，要操作的对象的名称，如WorkUnit和CueSheet，都是直接写在脚本中的。
-然而，这意味着如果我们想对不同的对象应用相同的操作时，只能直接编辑代码，既费时费力而且可能会导致错字。
-为了避免这种情况，CRI Atom Craft Robot为脚本编辑提供了扩展功能。
-这个功能允许我们在脚本列表和菜单中显示脚本注释，并使用编辑器GUI轻松更新脚本中定义的变量。
+在我们迄今为止创建的脚本中，要操作的对象的名称，如WorkUnit和CueSheet，都是直接写在脚本中的。<br/>
+然而，这意味着如果我们想对不同的对象应用相同的操作时，只能直接编辑代码，既费时费力而且可能会导致错字。<br/>
+为了避免这种情况，CRI Atom Craft Robot为脚本编辑提供了扩展功能。<br/>
+这个功能允许我们在脚本列表和菜单中显示脚本注释，并使用编辑器GUI轻松更新脚本中定义的变量。<br/>
 脚本编辑器的扩展功能将大幅降低修改脚本所需的时间和错误。
 
 在本教程中，我们将创建一个脚本，使用脚本编辑器扩展功能中的用户变量功能，在GUI操作中改变一个Cue的“音高”参数。
@@ -21,8 +21,7 @@
 | tutorials [CRI]  | tutorial06-1_user_variable.py             |
 
 ### 脚本文件说明
-双击刚刚创建的脚本，在脚本编辑器中打开它。
-写上如下的描述语句，我们就可以在脚本菜单中看到该脚本的说明：
+双击刚刚创建的脚本，在脚本编辑器中打开它，并写上如下的描述语句：
 
 ```
 # --Description:[教程]使用用户变量来改变Cue的“音高”参数
@@ -37,12 +36,12 @@ import cri.atomcraft.project as acproject
 import cri.atomcraft.debug as acdebug
 ```
 
-导入用于工程操作的project模块和用于日志输出的debug模块。
+导入用于工程操作的project模块和用于日志输出的debug模块。<br/>
 如果我们定义了一个用于处理对象的用户变量，则需要导入 cri.atomcraft.project，而不替换导入名称。
 
 ### 定义用户变量
-首先我们通过`# --BeginUserVariable`和`# --EndUserVariable`来定义用户变量的范围。
-在该范围内定义的变量，在脚本编辑器中会被当作用户变量处理。
+首先我们通过`# --BeginUserVariable`和`# --EndUserVariable`来定义用户变量的范围。<br/>
+在该范围内定义的变量，在脚本编辑器中会被当作用户变量处理。<br/>
 为了改变Cue的音高，我们在`# --BeginUserVariable`到`# --EndUserVariable`之间写下变量：
 * 改变参数的Cue
 * 要改变的参数的字段名
@@ -105,10 +104,8 @@ VARIABLE_PARAMETER_VALUE = 0
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_02.png)
 
 ### 为用户变量设定参数
-现在，脚本编辑器的“用户变量”部分中已经显示出了变量信息。
-
-我们可以通过从CRI Atom Craft的WorkUnit Tree上拖放Cue来设置VARIABLE_CUE变量的对象。
-
+现在，脚本编辑器的“用户变量”部分中已经显示出了变量信息。<br/>
+我们可以通过从CRI Atom Craft的WorkUnit Tree上拖放Cue来设置VARIABLE_CUE变量的对象。<br/>
 接下来将VARIABLE_PARAMETER_NAME和VARIABLE_PARAMETER_VALUE设定为如下值：
 
 | 变量名                   | 值    |
@@ -123,8 +120,8 @@ VARIABLE_PARAMETER_VALUE = 0
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_04.png)
 
 ### 使用“用户变量”更新Cue参数
-通过使用用户变量功能，我们已经为用户变量设置了对应的值。
-我们现在将使用用户变量来Cue参数。
+通过使用用户变量功能，我们已经为用户变量设置了对应的值。<br/>
+我们现在将使用用户变量来Cue参数。<br/>
 更新队列参数的脚本如下所示：  
 
 ```
@@ -134,7 +131,7 @@ acdebug.log("音高参数的更改已结束")
 ```
 
 ### 脚本的保存与运行
-脚本的编写到此结束。
+脚本的编写到此结束。<br/>
 保存并运行该脚本，如果脚本运行成功，Cue的音高值将被更新为用户变量区域中所设置的值，如下所示：
 
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_05.png)
