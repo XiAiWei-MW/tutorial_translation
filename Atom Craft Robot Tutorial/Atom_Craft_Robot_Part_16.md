@@ -22,7 +22,7 @@
 ### 导入模块
 完成脚本描述之后，请导入以下模块。
 
-```
+```python
 import sys
 import os
 import csv
@@ -35,7 +35,7 @@ import cri.atomcraft.project as acproject
 ### 设置CSV文件的路径
 设置用于检查的CSV文件的路径。脚本如下所示：
 
-```
+```python
 # CSV文件地址
 csv_path = os.path.dirname(os.path.dirname(__file__)) + '/tutorial_data/tutorial_data03/tutorial_data3.csv'
 
@@ -65,7 +65,7 @@ if os.path.isfile(csv_path) == False:
 如果CueSheet中有尚未创建的Cue，Cue名称将显示在脚本日志中。<br/>
 脚本如下：
 
-```
+```python
 # 打开CSV文件并检查CueSheet中的Cue
 acdebug.log("正在使用tutorial_data3.csv检查Cue")
 unregistered_cue_name_list = []
