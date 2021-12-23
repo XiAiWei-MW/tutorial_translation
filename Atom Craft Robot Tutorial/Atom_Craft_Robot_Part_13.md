@@ -25,13 +25,13 @@
 ### 脚本文件说明
 双击创建的脚本，在脚本编辑器中打开它。
 为了能够在“脚本列表”的窗口中显示脚本的内容，我们应当写一个脚本的描述，如下所示：
-```
+```python
 # --Description:[教程]检索当前选中的Cue，并批量改变它们的音量
 ```
 
 ### 导入模块
 完成脚本描述之后，请导入以下模块，以便在你的脚本中操作CRI Atom Craft。
-```
+```python
 import cri.atomcraft.debug as acdebug
 import cri.atomcraft.project as acproject
 ```
@@ -46,7 +46,7 @@ project模块提供了以下函数，以检索GUI中的选定对象：
 | get_selected_objects | 获取GUI于树状列表中选中的对象 |
 
 可以编写脚本来获取在GUI中的当前所选对象，如下所示：
-```
+```python
 # 获取选中的Cue
 selected_cues = acproject.get_selected_objects("Cue")["data"]
 ```
@@ -66,7 +66,7 @@ selected_cues = acproject.get_selected_objects("Cue")["data"]
 | set_value  | 设置对象的参数  |
 
 我们可以在脚本中使用这些函数，在当前音量上增加0.5，如下所示：
-```
+```python
 # 获取Cue的当前音量值，并设置一个新的音量
 for cue in selected_cues:
     # 取得Cue的音量

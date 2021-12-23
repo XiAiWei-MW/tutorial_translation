@@ -31,14 +31,14 @@
 ### 脚本文件说明
 双击刚刚创建的脚本，在脚本编辑器中打开它，并写上如下的描述语句：
 
-```
+```python
 # --Description:[教程]使用CSV创建CueSheet
 ```
 
 ### 导入模块
 完成脚本描述之后，请导入以下模块。
 
-```
+```python
 import sys
 import os
 import csv
@@ -55,7 +55,7 @@ import cri.atomcraft.project as acproject
 
 可以使用如下的脚本：
 
-```
+```python
 # 设置音频数据文件夹和要导入的CSV文件的路径
 # 音频数据文件夹路径
 data_dir = os.path.dirname(os.path.dirname(__file__)) + '/tutorial_data/tutorial_data03'
@@ -65,7 +65,7 @@ csv_path = data_dir + "/tutorial_data3.csv"
 
 # CSV文件路径检查
 if os.path.isfile(csv_path) == False:
-    acdebug.log("CSVファイルが見つかりません: " + csv_path)
+    acdebug.log("CSV文件未找到: " + csv_path)
     sys.exit()
 ```
 
@@ -89,7 +89,7 @@ if os.path.isfile(csv_path) == False:
 要创建的CueSheet的名称是CSV文件的名称（没有扩展名）。<br/>
 脚本如下所示：
 
-```
+```python
 # 获取Work Unit
 workunit = acproject.get_workunit("WorkUnit_Tutorial")["data"]
 material_root_folder = acproject.get_material_rootfolder(workunit)["data"]
@@ -113,7 +113,7 @@ os.path.splitext函数在最末端（最右边）的“.”处分割字符串。
 要读取一个CSV文件，可以使用csv模块中的csv.reader函数。<br/>
 用open函数打开文件，获取文件对象并将其作为参数传递给csv.reader函数。
 
-```
+```python
 # 打开并读取CSV文件
 with open(csv_path) as f:
     reader = csv.reader(f)
@@ -130,7 +130,7 @@ with open(csv_path) as f:
 
 脚本作成如下：
 
-```
+```python
 # 打开并读取CSV文件
 with open(csv_path) as f:
     reader = csv.reader(f)
@@ -161,7 +161,7 @@ for语句可以从reader中一行一行的获取CSV中的内容。<br/>
 
 ### 保存工程
 最后介绍一下脚本内保存工程的方法。
-```
+```python
 # Save Project
 result = acproject.save_project_all()
 if not result["succeed"]:

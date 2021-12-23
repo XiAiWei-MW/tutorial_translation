@@ -23,14 +23,14 @@
 ### 脚本文件说明
 双击刚刚创建的脚本，在脚本编辑器中打开它，并写上如下的描述语句：
 
-```
+```python
 # --Description:[教程]使用用户变量来改变Cue的“音高”参数
 ```
 
 ### 导入模块
 完成脚本描述之后，请导入以下模块，以便在你的脚本中操作CRI Atom Craft。
 
-```
+```python
 import cri.atomcraft.project
 import cri.atomcraft.project as acproject
 import cri.atomcraft.debug as acdebug
@@ -49,7 +49,7 @@ import cri.atomcraft.debug as acdebug
 
 如下所示：
 
-```
+```python
 # --BeginUserVariable
 VARIABLE_CUE = None
 VARIABLE_PARAMETER_NAME = ""
@@ -62,7 +62,7 @@ VARIABLE_PARAMETER_VALUE = 0
 ### 定义用户变量设置中显示的信息
 为了让之前定义的用户变量显示在用户变量窗口中，我们需要使用三个双引号（"）描述一个docstring区域，将变量的名称、类型和描述写在变量的定义语句之前。
 
-```
+```python
 """
 变量名:
   type: 变量类别
@@ -80,7 +80,7 @@ VARIABLE_PARAMETER_VALUE = 0
 
 脚本整体如下所示：
 
-```
+```python
 # --BeginUserVariable
 """
 VARIABLE_CUE:
@@ -124,7 +124,7 @@ VARIABLE_PARAMETER_VALUE = 0
 我们现在将使用用户变量来Cue参数。<br/>
 更新队列参数的脚本如下所示：  
 
-```
+```python
 acproject.set_value(VARIABLE_CUE, VARIABLE_PARAMETER_NAME, VARIABLE_PARAMETER_VALUE)
 
 acdebug.log("音高参数的更改已结束")
