@@ -12,7 +12,7 @@ Mac用户可从Homebrew等包管理器获得。
 
 ### 本地运行的环境配置
 接下来是本地的环境配置。
-如果仅仅是远程运行脚本的话则不需要配置。
+远程运行脚本的话可以跳到[“远程运行的环境配置”](#远程运行的环境配置)部分。
 
 > 关于本地和远程运行 <br/>
 本地运行是指从Atom Craft内部，例如菜单中，运行Atom Craft Robot。<br/>
@@ -91,3 +91,47 @@ sudo install_name_tool -change /Library/Frameworks/Python.framework/Versions/3.7
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_01_03.png)
 
 ### 远程运行的环境配置
+
+#### 检查远程运行的插件包
+CRI AtomCraft中包含一个用于远程执行的插件包。<br/>
+在与CriAtomCraft.exe（或Mac上的CriAtomCraft.app）同文件夹内有一个robot文件夹。<br/>
+里面的remote/Python文件夹内有一个cri文件夹，它是Python插件的根文件夹。<br/>
+文件结构如下：
+```
+CriAtomCraft.exe (CriAtomCraft.app)
+robot文件夹
+  - remote文件夹
+    - Python文件夹：Python版插件的根文件夹
+      - cri文件夹
+        - atomcraft文件夹
+          - build.py：插件脚本
+          - common.py：（同上）
+          - debug.py：（同上）
+          - project.py：（同上）
+          - preview.py：（同上）
+          - error.py：（同上）
+```
+
+#### 将Python版插件的根文件夹添加到PYTHONPATH中
+
+##### <u>Windows系统</u>
+如果CRI Atom Craft（CRI ADX2 SDK）的路径在C盘下，CriAtomCraft.exe的路径应该为：
+```shell
+C:\cri\tools\ADX2\ver.3\CriAtomCraft.exe
+```
+
+此时，应将以下文件夹路径追加到PYTHONPATH中：
+```shell
+C:\cri\tools\ADX2\ver.3\robot\remote\Python
+```
+
+##### <u>Mac系统</u>
+如果工具版本为Ver.3.44，CriAtomCraft.exe的路径应该为：
+```shell
+/Applications/CRIWARE/CRI ADX2/Tools Ver.3.44/CriAtomCraft.app
+```
+
+此时，应将以下文件夹路径追加到PYTHONPATH中：
+```shell
+/Applications/CRIWARE/CRI ADX2/Tools Ver.3.44/robot/remote/Python
+```
