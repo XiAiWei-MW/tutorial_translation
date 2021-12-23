@@ -1,4 +1,4 @@
-## Robot教程篇 Part 1： Python3环境配置
+## Robot教程篇 Part 1：Python3环境配置
 
 本教程将使用Python3作为脚本语言。已经将Python环境在AtomCraft中配置好的读者可以跳过这一节。
 
