@@ -139,7 +139,7 @@ with open(csv_path) as f:
 
         # 获取CSV的列
         wave_file_path = data_dir + "/" + row[0]  # 波形文件名
-        row_params["Name"] = row[1]               # Cue名
+        row_params["Name"] = row[1]               # Cue名称
         row_params["CueID"] = row[2]              # Cue ID
         row_params["Comment"] = row[3]            # 备注
 
@@ -151,3 +151,24 @@ with open(csv_path) as f:
         acproject.set_values(cue, row_params)
 acdebug.log("[教程]CueSheet生成结束")
 ```
+
+#### 说明
+for语句可以从reader中一行一行的获取CSV中的内容。<br/>
+从CSV中获取到的数据被“,”（逗号）分割，并储存在每一行中。<br/>
+每一行的数据包含了“波形文件名、Cue名称、Cue ID、注释”。<br/>
+逐个获取数据后，按照之前介绍的顺序注册波形文件，创建素材，新建Cue。将CSV中获取的“Cue名称、Cue ID、注释”等信息通过函数设定给对应的Cue。
+
+### 保存工程
+最后介绍一下脚本内保存工程的方法。
+```
+# Save Project
+result = acproject.save_project_all()
+if not result["succeed"]:
+    acdebug.warning("工程保存失败。")
+```
+
+### 脚本的保存与运行
+脚本的编写到此结束。<br/>
+保存并运行该脚本，如果脚本运行成功，工程内将会创建一个名为“tutorial_data3”的CueSheet，且CueSheet会包含CSV文件中的数据。
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_14_02.png)
