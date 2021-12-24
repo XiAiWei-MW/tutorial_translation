@@ -1,12 +1,12 @@
-## Robot教程篇 Part 3：理解CRI Atom Craft的对象结构
+## Robot教程篇 Part 3：理解CRI AtomCraft的对象结构
 
-### CRI Atom Craft项目树与CRI Atom Craft Robot操作的项目结构之间的关系
-CRI Atom Craft Robot能直接操作CRI Atom Craft管理的对象结构。<br/>
-已经使用过CRI Atom Craft的读者会知道，一个项目中的各种对象元素是分别显示在三个树中的：“项目树”、“工作单元树”和“素材树”。<br/>
+### CRI Atom Craft项目树与CRI AtomCraft Robot操作的项目结构之间的关系
+CRI Atom CraftRobot能直接操作CRI Atom Craft管理的对象结构。<br/>
+已经使用过CRI AtomCraft的读者会知道，一个项目中的各种对象元素是分别显示在三个树中的：“项目树”、“工作单元树”和“素材树”。<br/>
 也有一些对象没有显示在树上，但我们基本上可以理解为，一个对象的结构就是它在树上或专用视图中显示的结果。
 
-### CRI Atom Craft的内部项目结构
-在CRI Atom Craft项目中创建的各种对象的结构如下图所示：
+### CRI AtomCraft的内部项目结构
+在CRI AtomCraft项目中创建的各种对象的结构如下图所示：
 
 ![](../images/adx2_objects.jpg)
 
