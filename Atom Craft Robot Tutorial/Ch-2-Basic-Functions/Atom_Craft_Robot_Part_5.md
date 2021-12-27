@@ -90,3 +90,20 @@ cri.atomcraft.debug.log("Hello, World")
 运行该脚本时，我们会看到两行“Hello, World”，分别是print函数和log函数的输出结果。
 
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_07.png)
+
+#### Python标准print函数和debug模块log函数之间的区别
+当我们在本地的脚本编辑器中使用print和log函数时，脚本日志的输出并没有真正的区别。<br/>
+然而，当使用print函数远程执行Python脚本时，结果不会显示在CRI AtomCraft脚本日志中，而是输出到运行的应用程序内。<br/>
+这种差异是因为print函数是由运行脚本的程序处理的。另一方面，log函数只在远程执行时输出到脚本日志。
+
+如果我们通过从外部应用程序远程执行脚本来使用CRI AtomCraft，我们可能更希望将日志数据输出到外部应用程序。<br/>
+因此，print函数和log函数能让我们把结果输出到不同的地方。
+
+[远程执行的示例：通过terminal远程连接到CRI AtomCraft并运行print函数]
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_08.png)
+
+#### Debug模块中其它的输出函数
+在本教程中，我们使用了log函数来打印“Hello World”。<br/>
+实际场景中，当我们写一个脚本来操作CRI AtomCraft时，日志输出主要用于调试目的。<br/>
+除了log函数外，在debug模块中还有一个warning函数。
