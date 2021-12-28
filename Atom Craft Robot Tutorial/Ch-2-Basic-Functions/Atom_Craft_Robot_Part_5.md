@@ -107,3 +107,13 @@ cri.atomcraft.debug.log("Hello, World")
 在本教程中，我们使用了log函数来打印“Hello World”。<br/>
 实际场景中，当我们写一个脚本来操作CRI AtomCraft时，日志输出主要用于调试目的。<br/>
 除了log函数外，在debug模块中还有一个warning函数。
+
+| 函数名  | 说明         |
+|:--------|:-------------|
+| log     | 输出标准的log   |
+| warning | 输出彩色的警告log |
+
+warning函数输出的文本将在CRI AtomCraft的日志窗口中以彩色文本显示。 （目前还不支持脚本日志窗口中的彩色文本）<br/>
+通过使用不同的函数，我们可以有效地检查脚本的执行。
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_09.png)
