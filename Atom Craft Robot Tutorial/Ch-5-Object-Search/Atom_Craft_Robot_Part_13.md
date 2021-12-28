@@ -30,7 +30,7 @@
 ```
 
 ### 导入模块
-完成脚本描述之后，请导入以下模块，以便在你的脚本中操作CRI Atom Craft。
+完成脚本描述之后，请导入以下模块，以便在你的脚本中操作CRI AtomCraft。
 ```python
 import cri.atomcraft.debug as acdebug
 import cri.atomcraft.project as acproject
