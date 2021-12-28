@@ -196,3 +196,40 @@ get_child_object函数需要指定对象信息、需要检索的对象类型和�
 create_object函数需要指定（1）源对象信息，（2）要创建的对象类型以及（3）要创建的对象的名称。
 
 #### Cue，音轨和波形区域创建的说明
+在刚才创建的CueSheet上按顺序创建Cue、音轨和波形区域。<br/>
+为什么我们需要Cue和轨道来创建一个波形区域？ 想了解更多的读者可能需要回顾一下<a href="file:///D:\Github\blog_translation\Atom%20Craft%20Robot%20Tutorial\Ch-0-Introduction\Atom_Craft_Robot_Part_03.md" target="_blank">“理解CRI AtomCraft的对象结构”</a>中的对象结构。<br/>
+其中，Cue、音轨和波形区域是分层次的。<br/>
+和CueSheet相似，使用create_object函数可以创建Cue和音轨。<br/>
+波形区域是用专用的create_waveform_region函数创建的，其中需要指定轨道信息和参考素材。
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_05_03.png)
+
+#### create_simple_cue函数的说明
+为了更好地了解对象的层次结构，在本节中我们展示了如何使用create_object和create_waveform_region函数逐一创建Cue、轨道和波形区域。<br/>
+project模块还有一个名为“create_simple_cue ”的函数，可以在一个函数中创建一个Cue、轨道和波形区域，使用不带扩展名的素材名称作为Cue名称。<br/>
+如果我们在脚本中使用create_simple_cue来创建Cue、音轨和波形区域，就可以用较少的代码来创建Cue：
+
+```python
+cue = acproject.create_simple_cue(cuesheet, material)["data"]
+```
+
+### 保存工程
+现在我们已经创建了项目并创建了一个注册了波形文件的Cue。
+最后，我们进行项目的保存。
+
+要保存该项目，请使用以下函数：
+
+| 函数名           | 说明     |
+|:-----------------|:---------|
+| save_project_all | 保存所有项目 |
+
+脚本如下所示：
+
+```python
+# 保存项目
+result = acproject.save_project_all()
+
+# 如果保存失败，则输出一个警告信息
+if not result["succeed"]:
+    acdebug.warning("项目保存失败")
+```

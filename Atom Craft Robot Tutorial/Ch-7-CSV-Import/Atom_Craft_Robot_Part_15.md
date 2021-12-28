@@ -169,7 +169,7 @@ if not result["succeed"]:
 ```
 
 ### 脚本的保存与运行
-脚本的编写到此结束。<br/>
+脚本的编写到此结束。
 保存并运行该脚本，如果脚本运行成功，工程内将会创建一个名为“tutorial_data3”的CueSheet，且CueSheet会包含CSV文件中的数据。
 
 ![](https://game.criware.jp/wp-content/uploads/2020/11/robot_14_02.png)
