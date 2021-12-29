@@ -76,3 +76,48 @@ cue = acproject.get_child_object(cue_sheet, "Cue", "gun1_High")["data"]
 
 接下来，我们使用get_cuesheet_rootfolder函数从工作单元中检索出工作单元的CueSheet根文件夹。<br/>
 从CueSheet根文件夹中，我们可以使用get_child_object函数来从CueSheet文件夹、CueSheet、Cue等层次结构中获取对象。
+
+### 变更Cue的参数值
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_06_02.png)
+
+获取了Cue之后，接下来是变更Cue的参数值。<br/>
+我们将使用以下函数来改变Cue的音量参数：
+
+| 函数名    | 说明      |
+|:----------|:----------|
+| set_value | 设置对象的参数 |
+
+使用该函数将Cue的音量变更为0.5的脚本如下所示：
+
+```python
+# 变更Cue的音量
+acproject.set_value(cue, "Volume", 0.5)
+```
+
+#### 说明
+set_value函数是一个用于改变参数的通用函数，需要指定“目标对象信息”、“参数名称”和 “参数值”。
+
+在执行脚本之前，确认Cue“gun1_High”的音量为1.0。<br/>
+确认完成后，按“运行”按钮来运行该脚本。<br/>
+可以看到，提示音“gun1_High”的音量已经变成了0.5。
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_06_03.png)
+
+### Cue的预览
+最后，我们将在导入的preview模块中使用以下函数预览Cue：
+
+| 函数名             | 说明      |
+|:-------------------|:----------|
+| start_playback_cue | 播放所指定的Cue |
+
+start_playback_cue函数是一个简单的预览函数，能让我们指定一个Cue来预览和播放。<br/>
+刚才改变了音量的Cue“gun1_High”，通过以下的脚本，可以预览出来：
+
+```python
+# 播放Cue
+acpreview.start_playback_cue(cue)
+```
+
+### 脚本的保存与运行
+保存并运行该脚本，如果脚本运行成功，名为“gun1_High”的Cue的音量会变为0.5，并且会进行预览播放。
