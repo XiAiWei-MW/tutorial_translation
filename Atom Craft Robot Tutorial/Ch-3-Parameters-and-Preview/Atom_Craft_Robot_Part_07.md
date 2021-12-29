@@ -45,7 +45,7 @@ import cri.atomcraft.preview as acpreview
 
 | 函数名                  | 说明                |
 |:------------------------|:--------------------|
-| get_workunit            | 获取工作单元            |
+| get_workunit            | 获取工作单元        |
 | get_cuesheet_rootfolder | 获取CueSheet根文件夹    |
 | get_child_object        | 搜索并获取指定的父对象正下方的对象 |
 

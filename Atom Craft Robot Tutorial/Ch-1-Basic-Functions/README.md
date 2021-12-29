@@ -8,4 +8,4 @@ project模块包含用于管理和执行项目操作的函数。例如，通过�
 
 debug模块包含用于管理和执行日志输出的函数，例如log和warning。
 
-更多信息请参考<a href="https://www.criware.cn/public/upload/chm/CRI_ADX2_Tools_Manual_zh_public/criatom_tools_atomcraft_api_refmodule_project.html" target="_blank">AtomCraft Robot官方中文参考文档</a>。
+更多信息请参考<a href="https://www.criware.cn/public/upload/chm/CRI_ADX2_Tools_Manual_zh_public/criatom_tools_atomcraft_api_refmodule.html" target="_blank">AtomCraft Robot官方中文参考文档</a>。
