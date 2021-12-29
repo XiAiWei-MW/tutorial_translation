@@ -34,7 +34,7 @@ import cri.atomcraft.project as acproject
 ```
 
 除了标准的Python模块sys和os之外，我们还导入了两个CRI AtomCraft操作模块。<br/>
-一个是在<a href="file:///D:\Github\blog_translation\Atom%20Craft%20Robot%20Tutorial\Ch-1-Basic-Functions\Atom_Craft_Robot_Part_05.md" target="_blank">“在脚本日志中输出‘Hello World’”</a>教程中介绍过的debug模块，另一个是用于操作CRI AtomCraf的项目数据的project模块。
+一个是在<a href="../Ch-1-Basic-Functions/Atom_Craft_Robot_Part_05.md" target="_blank">“在脚本日志中输出‘Hello World’”</a>教程中介绍过的debug模块，另一个是用于操作CRI AtomCraf的项目数据的project模块。
 
 ### 项目名称和保存路径的设定
 接下来把项目名称，项目保存位置，教程中使用到的波形的位置记录在脚本里：
@@ -198,7 +198,7 @@ create_object函数需要指定（1）源对象信息，（2）要创建的对�
 
 #### Cue，音轨和波形区域创建的说明
 在刚才创建的CueSheet上按顺序创建Cue、音轨和波形区域。<br/>
-为什么我们需要Cue和轨道来创建一个波形区域？ 想了解更多的读者可能需要回顾一下<a href="file:///D:\Github\blog_translation\Atom%20Craft%20Robot%20Tutorial\Ch-0-Introduction\Atom_Craft_Robot_Part_03.md" target="_blank">“理解CRI AtomCraft的对象结构”</a>中的对象结构。<br/>
+为什么我们需要Cue和轨道来创建一个波形区域？ 想了解更多的读者可能需要回顾一下<a href="../Ch-0-Introduction/Atom_Craft_Robot_Part_03.md" target="_blank">“理解CRI AtomCraft的对象结构”</a>中的对象结构。<br/>
 其中，Cue、音轨和波形区域是分层次的。<br/>
 和CueSheet相似，使用create_object函数可以创建Cue和音轨。<br/>
 波形区域是用专用的create_waveform_region函数创建的，其中需要指定轨道信息和参考素材。

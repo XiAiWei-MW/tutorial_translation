@@ -1,8 +1,8 @@
 ### Robot教程篇 Part 7：参数值的变更与预览
-在上一章<a href="file:///D:\Github\blog_translation\Atom%20Craft%20Robot%20Tutorial\Ch-2-Project-Module\Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中，我们用AtomCraft Robot创建了一系列数据，例如项目和Cue。
+在上一章<a href="../Ch-2-Project-Module/Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中，我们用AtomCraft Robot创建了一系列数据，例如项目和Cue。
 
 本节我们将编写一个脚本来改变我们创建的Cue的音量，并预览该Cue。<br/>
-我们将会用到上一章<a href="file:///D:\Github\blog_translation\Atom%20Craft%20Robot%20Tutorial\Ch-2-Project-Module\Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中创建的项目。
+我们将会用到上一章<a href="../Ch-2-Project-Module/Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中创建的项目。
 
 ### 准备脚本文件
 在脚本菜单中，选择“脚本列表”。<br/>
