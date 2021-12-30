@@ -1,4 +1,4 @@
-## Robot教程篇 Part 10：来尝试使用find_object吧
+## Robot教程篇 Part 10：来尝试使用find_object吧（上）
 
 在本教程中，我们将使用find_object函数在一个工作单元中通过递归的方式检索一个CueSheet，连续处理多个波形文件并将它们注册到素材中，之后创建引用它们的Cue。<br/>
 在<a href="../Ch-2-Project-Module/Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>教程中，我们尝试了逐一创建一个Cue和一个素材。<br/>
