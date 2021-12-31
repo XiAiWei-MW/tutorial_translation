@@ -56,3 +56,43 @@ voicelimit_group = acproject.get_child_object(voicelimit_group_folder, "VoiceLim
 在得到Voice限数组文件夹后，我们使用get_child_object获取Voice限数组文件夹下的Voice限数组“VoiceLimitGroup_0”，并将其存储在变量voicelimit_group中。
 
 ### 获取设置Voice限数组的波形区域
+以下函数可以用来检索工作单元下的所有波形区域：
+
+| 函数名       | 说明                  |
+|:-------------|:----------------------|
+| get_workunit | 获取工作单元          |
+| find_objects | 以递归方式搜索对象并获取所有符合条件的对象 |
+
+使用这些函数检索波形区域的脚本如下所示：
+
+```python
+# 获取工作单元
+workunit = acproject.get_workunit("WorkUnit_Tutorial")["data"]
+
+# 使用find_objects来获得CueSheet中的波形区域列表
+waveformRegions = acproject.find_objects(workunit, "WaveformRegion")["data"]
+```
+
+#### 说明
+find_objects函数可以用于以列表形式检索一个工作单元下的所有波形区域。
+该函数需要指定“作为搜索根的对象”和“要检索的对象类型”。
+由于我们要检索工作单元下面的所有波形区域，我们指定工作单元变量 “WaveformRegion”（波形区域类型的名称）并将检索到的列表存储在waveformRegions变量中。
+
+### 为每个波形区域设置Voice限数组
+从先前获取到的波形区域列表中一次取出一个波形区域，并设置Voice限数组。
+要从波形区域列表中获取波形区域，请使用for语句。
+
+```python
+# 用for循环从波形区域列表中逐一获取波形区域
+for region in waveformRegions:
+    # 在波形区域设置Voice限数组
+    acproject.set_value(region, "VoiceLimitGroup", voicelimit_group)
+
+acdebug.log("[教程]使用find_objects函数&波形区域设置Voice限数组运行完毕")
+```
+
+### 脚本的保存与运行
+脚本的编写到此结束。<br/>
+保存并运行该脚本，如果脚本运行成功，工作单元内的全部波形区域的Voice限数组都会被设置为“VoiceLimitGroup_0”。
+
+![](https://game.criware.jp/wp-content/uploads/2020/11/robot_10_01.png)
