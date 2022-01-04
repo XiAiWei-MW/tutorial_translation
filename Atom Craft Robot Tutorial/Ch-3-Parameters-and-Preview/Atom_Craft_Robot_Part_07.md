@@ -31,7 +31,7 @@ import cri.atomcraft.preview as acpreview
 
 ### 获取编辑的Cue
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_06_01.png)
+![](../images/robot_06_01.png)
 
 为了编辑一个Cue的参数，我们需要将该Cue作为一个对象获取。
 有两种获取对象的主要方式：
@@ -79,7 +79,7 @@ cue = acproject.get_child_object(cue_sheet, "Cue", "gun1_High")["data"]
 
 ### 变更Cue的参数值
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_06_02.png)
+![](../images/robot_06_02.png)
 
 获取了Cue之后，接下来是变更Cue的参数值。<br/>
 我们将使用以下函数来改变Cue的音量参数：
@@ -102,7 +102,7 @@ set_value函数是一个用于改变参数的通用函数，需要指定“目�
 确认完成后，按“运行”按钮来运行该脚本。<br/>
 可以看到，提示音“gun1_High”的音量已经变成了0.5。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_06_03.png)
+![](../images/robot_06_03.png)
 
 ### Cue的预览
 最后，我们将在导入的preview模块中使用以下函数预览Cue：

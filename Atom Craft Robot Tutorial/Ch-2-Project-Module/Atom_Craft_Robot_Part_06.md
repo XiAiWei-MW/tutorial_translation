@@ -105,7 +105,7 @@ workunit = result["data"]
 
 运行该脚本时，在“Documents/CRIWARE/CriAtomCraft/projects”下将创建一个包含工作单元 “WorkUnit_Tutorial”的“Project_Tutorial”项目。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_05_01.png)
+![](../images/robot_05_01.png)
 
 #### 创建项目的说明
 create_project函数用于创建一个项目，它指定了三个信息：项目名称、项目保存位置以及是否应该覆盖已存在项目。<br/>
@@ -150,7 +150,7 @@ material = acproject.register_material(material_root_folder, data_dir+"/tutorial
 
 执行脚本后，我们可以看到工作单元的素材根文件夹下创建了一个名为“gun1_High.wav ”素材。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_05_02.png)
+![](../images/robot_05_02.png)
 
 ### CueSheet，Cue和波形区域的创建
 我们已经在工作单元的素材信息中注册了波形文件。<br/>
@@ -203,7 +203,7 @@ create_object函数需要指定（1）源对象信息，（2）要创建的对�
 和CueSheet相似，使用create_object函数可以创建Cue和音轨。<br/>
 波形区域是用专用的create_waveform_region函数创建的，其中需要指定轨道信息和参考素材。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_05_03.png)
+![](../images/robot_05_03.png)
 
 #### create_simple_cue函数的说明
 为了更好地了解对象的层次结构，在本节中我们展示了如何使用create_object和create_waveform_region函数逐一创建Cue、轨道和波形区域。<br/>

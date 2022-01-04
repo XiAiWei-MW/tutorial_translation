@@ -45,7 +45,7 @@ tutorials
 ### 查看教程和示例文件夹
 在”脚本菜单”中选择“脚本列表”来显示脚本列表窗口，此时我们会在初始脚本列表中看到 “samples[CRI]”和“tutorials[CRI]”这两个文件夹。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_02_01.png)
+![](../images/robot_02_01.png)
 
 在此次教程中，我们将在这个“tutorials[CRI]”文件夹中创建脚本文件。<br/>
 “tutorials[CRI]”文件夹的路径如下：

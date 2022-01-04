@@ -11,13 +11,13 @@
 启动CRI AtomCraft，从“脚本”菜单中选择“脚本列表”。<br/>
 从脚本列表中选择“tutorials[CRI]”，然后点击脚本文件的“新建”按钮。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_01.png)
+![](../images/robot_04_01.png)
 
 点击“新建”按钮，打开文件创建对话框。<br/>
 输入文件名“tutorial01-1_helloworld.py”，然后点击 "保存 "按钮，保存该文件。<br/>
 保存好的脚本文件“tutorial01-1_helloworld”将出现在脚本列表中。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_02.png)
+![](../images/robot_04_02.png)
 
 ### 脚本说明
 我们现在已经创建了一个脚本文件。<br/>
@@ -38,7 +38,7 @@
 添加注释后，点击脚本编辑器工具栏上的“保存”按钮，保存脚本。<br/>
 返回脚本列表时，可以看到脚本“tutorial01-1_helloworld”的说明已经显示出来。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_03.png)
+![](../images/robot_04_03.png)
 
 ### 使用Python标准字符串输出“Hello, World”
 添加了脚本说明之后，让我们使用Python标准输出的print函数将“Hello, World”打印到脚本日志中。<br/>
@@ -50,14 +50,14 @@ print("Hello, World")
 
 在脚本编辑器的工具栏上，点击“保存”按钮保存脚本。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_04.png)
+![](../images/robot_04_04.png)
 
 #### 运行脚本
 运行刚才创建的脚本，脚本日志窗口中显示“Hello, World”。<br/>
 回到脚本列表，点击“显示日志”按钮，显示脚本日志窗口。<br/>
 按工具栏上的“运行”按钮来运行脚本，“Hello, World”会出现在脚本日志窗口。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_05.png)
+![](../images/robot_04_05.png)
 
 ### 使用cri.atomcraft.debug模块显示“Hello, World”
 使用Python的打印函数，我们能够在脚本日志中输出“Hello, World”。<br/>
@@ -72,7 +72,7 @@ print("Hello, World")
 import cri.atomcraft.debug
 ```
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_06.png)
+![](../images/robot_04_06.png)
 
 #### 使用debug模块的log函数显示“Hello, World”
 有了import，我们现在就可以使用CRI AtomCraft API的debug模块了。
@@ -89,7 +89,7 @@ cri.atomcraft.debug.log("Hello, World")
 保存脚本后，在运行前，按脚本日志窗口中的“清除”按钮，清除日志窗口。<br/>
 运行该脚本时，我们会看到两行“Hello, World”，分别是print函数和log函数的输出结果。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_07.png)
+![](../images/robot_04_07.png)
 
 #### Python标准print函数和debug模块log函数之间的区别
 当我们在本地的脚本编辑器中使用print和log函数时，脚本日志的输出并没有真正的区别。<br/>
@@ -101,7 +101,7 @@ cri.atomcraft.debug.log("Hello, World")
 
 [远程执行的示例：通过terminal远程连接到CRI AtomCraft并运行print函数]
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_08.png)
+![](../images/robot_04_08.png)
 
 #### Debug模块中其它的输出函数
 在本教程中，我们使用了log函数来打印“Hello World”。<br/>
@@ -116,4 +116,4 @@ cri.atomcraft.debug.log("Hello, World")
 warning函数输出的文本将在CRI AtomCraft的日志窗口中以彩色文本显示。 （目前还不支持脚本日志窗口中的彩色文本）<br/>
 通过使用不同的函数，我们可以有效地检查脚本的执行。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_04_09.png)
+![](../images/robot_04_09.png)

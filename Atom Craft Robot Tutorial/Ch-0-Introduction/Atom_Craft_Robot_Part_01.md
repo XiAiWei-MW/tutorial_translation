@@ -22,7 +22,7 @@ Mac用户可从Homebrew等包管理器获得。
 从“脚本”菜单中打开“脚本设置”对话框。<br/>
 接着在“插件”选项卡中指定插件类型（Python版本）。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_01_01.png)
+![](../images/robot_01_01.png)
 
 请按照本地Python的版本选择正确的插件。<br/>
 已安装的Python的版本可以用以下命令行语句查看。
@@ -59,7 +59,7 @@ where python
 ##### <u>（1）在“脚本”菜单中的“脚本设定”里选择“MAC PYTHON库”</u>
 “CRI AtomCraft中正在使用的Python库”区域会自动填充。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_01_02.png)
+![](../images/robot_01_02.png)
 
 ##### <u>（2）变更后的Python库路径</u>
 使用Homebrew安装Python3的情况（Ver.3.7.8）
@@ -88,7 +88,7 @@ sudo install_name_tool -change /Library/Frameworks/Python.framework/Versions/3.7
 在“脚本设置”对话框的“用户脚本”选项卡上，点击“添加”按钮，新增文件夹路径。<br/>
 在这里设定好的文件夹路径内的文件，之后会在脚本列表和脚本菜单中显示出来，并且可以在CRI AtomCraft中运行。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_01_03.png)
+![](../images/robot_01_03.png)
 
 ### 远程运行的环境配置
 
