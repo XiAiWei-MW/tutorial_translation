@@ -6,7 +6,7 @@
 
 ![](../images/robot_12_01.png)
 
-本教程将会使用之前在<a href="https://game.criware.jp/learn/tutorial/atomcraft/atomcraft_robot_10/" target="_blank">“让我们使用find_object函数”（日文）</a>教程中创建的工程。
+本教程将会使用之前在<a href="Atom_Craft_Robot_Part_10.md" target="_blank">“来尝试使用find_object吧（上）”</a>教程中创建的工程。
 
 ### 选中Cue
 在本教程中，我们将对GUI中当前选定的对象进行操作，因此我们先在CRI Atom Craft的GUI中选中Cue。

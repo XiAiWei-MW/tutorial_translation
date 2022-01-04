@@ -16,9 +16,9 @@
 | ObjectAppearance.wav | SE1002_ObjectAppearance | 1002   | 出现 |
 | ~                    | ~                       | ~      | ~    |
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_14_01.png)
+![](../images/robot_14_01.png)
 
-本教程将使用在教程<a href="https://game.criware.jp/learn/tutorial/atomcraft/atomcraft_robot_06/" target="_blank">“创建项目和排定波形文件”（日文）</a>中创建的工程。
+本教程将使用在教程<a href="../Ch-2-Project-Module/Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中创建的工程。
 
 ### 准备脚本文件
 在脚本菜单中，选择“脚本列表”。<br/>
@@ -172,4 +172,4 @@ if not result["succeed"]:
 脚本的编写到此结束。
 保存并运行该脚本，如果脚本运行成功，工程内将会创建一个名为“tutorial_data3”的CueSheet，且CueSheet会包含CSV文件中的数据。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_14_02.png)
+![](../images/robot_14_02.png)

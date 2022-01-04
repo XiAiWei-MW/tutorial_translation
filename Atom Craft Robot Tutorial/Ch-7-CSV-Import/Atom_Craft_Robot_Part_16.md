@@ -1,8 +1,8 @@
 ## Robot教程篇 Part 16：使用CSV检查未注册的Cue
-在之前的<a href="https://github.com/XiAiWei-MW/tutorial_translation/blob/main/Atom%20Craft%20Robot%20Tutorial/Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>教程中，我们通过CSV文件注册了波形文件，并创建了CueSheet和Cue。<br/>
-在本教程中，我们将使用<a href="https://github.com/XiAiWei-MW/tutorial_translation/blob/main/Atom%20Craft%20Robot%20Tutorial/Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>中的CSV文件来写一个脚本，以检查在CRI Atom Craft中创建的CueSheet是否包含与CSV文件中的Cue名称相一致的Cue。
+在之前的<a href="Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>教程中，我们通过CSV文件注册了波形文件，并创建了CueSheet和Cue。<br/>
+在本教程中，我们将使用<a href="Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>中的CSV文件来写一个脚本，以检查在CRI Atom Craft中创建的CueSheet是否包含与CSV文件中的Cue名称相一致的Cue。
 
-同样的，我们也会使用之前<a href="https://github.com/XiAiWei-MW/tutorial_translation/blob/main/Atom%20Craft%20Robot%20Tutorial/Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>中创建的工程。
+同样的，我们也会使用之前<a href="Atom_Craft_Robot_Part_15.md" target="_blank">“使用CSV文件创建CueSheet”</a>中创建的工程。
 
 ### 准备脚本文件
 在脚本菜单中，选择“脚本列表”。<br/>
