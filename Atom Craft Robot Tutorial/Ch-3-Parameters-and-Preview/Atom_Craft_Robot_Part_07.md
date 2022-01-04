@@ -40,7 +40,7 @@ import cri.atomcraft.preview as acpreview
 
 作为对层次结构的复习，我们将使用以下函数来逐级遍历工作单位对象，以获取Cue。<br/>
 如果我们知道将要获取的Cue的层次结构，那么遍历层次结构进行获取就很有用。<br/>
-通过搜索进行获取的方法将在之后 "对象检索功能的类型"的教程中解释。<br/>
+通过搜索进行获取的方法将在之后<a href="../Ch-5-Object-Search/Atom_Craft_Robot_Part_09.md" target="_blank">“对象检索函数的类型”</a>的教程中解释。<br/>
 以下函数依次用于获取工作单元、CueSheet文件夹、CueSheet和Cue：
 
 | 函数名                  | 说明                |
