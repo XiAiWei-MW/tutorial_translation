@@ -4,7 +4,7 @@
 在CRI Atom Craft Robot中，我们也可以通过GUI获取选定的对象，并使用脚本对其进行操作。
 在本教程中，我们将创建一个脚本，使用get_selected_objects函数来获取当前在GUI中选中的Cue，并改变它们的音量。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_12_01.png)
+![](../images/robot_12_01.png)
 
 本教程将会使用之前在<a href="https://game.criware.jp/learn/tutorial/atomcraft/atomcraft_robot_10/" target="_blank">“让我们使用find_object函数”（日文）</a>教程中创建的工程。
 
@@ -12,7 +12,7 @@
 在本教程中，我们将对GUI中当前选定的对象进行操作，因此我们先在CRI Atom Craft的GUI中选中Cue。
 选择CueSheet“Tutorial”中的所有Cue，如下图所示。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_12_02.png)
+![](../images/robot_12_02.png)
 
 ### 准备脚本文件
 在脚本菜单中，选择“脚本列表”，此时会出现一个脚本列表窗口，我们可以从中选择将要运行的脚本。
@@ -84,4 +84,4 @@ acdebug.log("音量变更完毕")
 脚本的编写到此结束。
 保存并运行该脚本，如果脚本运行成功，所有选定的Cue的音量将增加0.5。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_12_03.png)
+![](../images/robot_12_03.png)

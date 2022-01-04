@@ -8,7 +8,7 @@
 
 在本教程中，我们将创建一个脚本，使用脚本编辑器扩展功能中的用户变量功能，在GUI操作中改变一个Cue的“音高”参数。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_01.png)
+![](../images/robot_13_01.png)
 
 本教程将使用之前在教程<a href="../Ch-2-Project-Module/Atom_Craft_Robot_Part_06.md" target="_blank">“创建一个项目并注册波形文件”</a>中创建的工程。
 
@@ -101,7 +101,7 @@ VARIABLE_PARAMETER_VALUE = 0
 
 现在，点击脚本编辑器工具栏中的“更新”按钮，在脚本编辑器的右侧的“用户变量”区域将会显示我们刚才在脚本编辑器中编写的用户变量信息。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_02.png)
+![](../images/robot_13_02.png)
 
 ### 为用户变量设定参数
 现在，脚本编辑器的“用户变量”部分中已经显示出了变量信息。<br/>
@@ -113,11 +113,11 @@ VARIABLE_PARAMETER_VALUE = 0
 | VARIABLE_PARAMETER_NAME  | Pitch |
 | VARIABLE_PARAMETER_VALUE | 100   |
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_03.png)
+![](../images/robot_13_03.png)
 
 点击应用之后，脚本将显示出脚本编辑器中“用户变量”部分的内容。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_04.png)
+![](../images/robot_13_04.png)
 
 ### 使用“用户变量”更新Cue参数
 通过使用用户变量功能，我们已经为用户变量设置了对应的值。<br/>
@@ -134,7 +134,7 @@ acdebug.log("音高参数的更改已结束")
 脚本的编写到此结束。<br/>
 保存并运行该脚本，如果脚本运行成功，Cue的音高值将被更新为用户变量区域中所设置的值，如下所示：
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_13_05.png)
+![](../images/robot_13_05.png)
 
 在这篇文章中，我们介绍了一个使用用户变量功能来改变Cue的音高的脚本。
 这个脚本不仅可以用于Cue，也可以用于音轨。

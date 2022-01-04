@@ -140,4 +140,4 @@ add_category_to_cues函数指定一个Cue的列表和一个类别。
 ### 保存和运行脚本
 保存并运行该脚本，如果脚本运行成功，CategoryGroup_0下的“Category_0”将被改为“sfx”，名称以“sfx ”开头的Cue将会被归为“sfx”类别，如下所示：
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_11_01.png)
+![](../images/robot_11_01.png)

@@ -95,4 +95,4 @@ acdebug.log("[教程]使用find_objects函数&波形区域设置Voice限数组�
 脚本的编写到此结束。<br/>
 保存并运行该脚本，如果脚本运行成功，工作单元内的全部波形区域的Voice限数组都会被设置为“VoiceLimitGroup_0”。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_10_01.png)
+![](../images/robot_10_01.png)

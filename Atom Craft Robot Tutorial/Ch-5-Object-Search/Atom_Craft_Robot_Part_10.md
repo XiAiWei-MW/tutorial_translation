@@ -125,4 +125,4 @@ acdebug.log("[教程]使用find_object函数完成了文件夹中多个音频文
 ### 脚本的保存与运行
 保存并运行该脚本，如果脚本运行成功，就会像下图一样，将“tutorial_data02”中的音频文件注册为素材，并创建一个Cue来引用它们。
 
-![](https://game.criware.jp/wp-content/uploads/2020/11/robot_09_01.png)
+![](../images/robot_09_01.png)
