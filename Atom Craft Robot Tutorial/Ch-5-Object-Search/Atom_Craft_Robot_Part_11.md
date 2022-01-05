@@ -19,7 +19,7 @@ find_objects函数是一个非常有用的函数，它允许我们在一次调�
 双击刚刚创建的脚本，在脚本编辑器中打开它，并写上如下的描述语句：
 
 ```python
-# --Description:[教程]使用find_object函数&批量设置波形区域的Voice限数组
+# --Description:[教程]使用find_object函数＆批量设置波形区域的Voice限数组
 ```
 
 ### 导入模块
