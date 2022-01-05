@@ -162,7 +162,7 @@ for语句可以从reader中一行一行的获取CSV中的内容。<br/>
 ### 保存工程
 最后介绍一下脚本内保存工程的方法。
 ```python
-# Save Project
+# 保存项目
 result = acproject.save_project_all()
 if not result["succeed"]:
     acdebug.warning("工程保存失败。")
