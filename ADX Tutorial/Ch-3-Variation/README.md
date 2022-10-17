@@ -5,4 +5,4 @@
 * <a href="ADX_Part_13.md" target="_blank">13 - 自动化</a>
 * <a href="ADX_Part_14.md" target="_blank">14 - 标记</a>
 * <a href="ADX_Part_15.md" target="_blank">15 - 包络</a>
-* <a href="ADX_Part_10.md" target="_blank">16 - 自动重复和随机偏移</a>
+* <a href="ADX_Part_16.md" target="_blank">16 - 自动重复和随机偏移</a>
