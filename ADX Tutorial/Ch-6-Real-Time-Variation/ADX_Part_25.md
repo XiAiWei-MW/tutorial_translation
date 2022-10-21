@@ -11,14 +11,13 @@
 #### 改变音效的示例
 (*音效的示例来自于旧版本的工具，与新版本看起来略有不同)
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/bPQeYh8waf8" title="８．ブロック再生機能を使ってみよう（１）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="720" height="405" src="https://www.youtube.com/embed/jtLFhoQdRFg" title="９．ブロック再生機能を使ってみよう（２）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* <a href="https://www.youtube.com/embed/bPQeYh8waf8" target="_blank">８．ブロック再生機能を使ってみよう（１）</a>
+* <a href="https://www.youtube.com/embed/jtLFhoQdRFg" target="_blank">９．ブロック再生機能を使ってみよう（２）</a>
 
 #### 变化的乐曲的示例
 也可以像在作曲软件中那样，按乐器分开波形数据并将它们并列展开。
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/gFCLlMWVHYM" title="CRI ADX2 / ブロック再生デモ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/embed/gFCLlMWVHYM" target="_blank">CRI ADX2 / ブロック再生デモ</a>
 
 视频中是按照Intro→Intro2→A→A→B→A→C→Intro2的顺序迁移的。
     
