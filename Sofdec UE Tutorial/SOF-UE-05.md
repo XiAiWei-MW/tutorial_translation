@@ -13,7 +13,7 @@
 
 在编辑材料中，选择材料的“Result Node”。<br/>
 在细节面板中，将“Material Domain”改为“User Interface”。<br/>
-这将使“视频材料”在UMG组件中可以使用。
+这将使“视频材料”在UMG控件中可以使用。
 
 ![](images/sofdec_ue_0502.png)
 
@@ -32,12 +32,12 @@
 
 ![](images/sofdec_ue_0505.png)
 
-#### 3.编辑组件
-在“调色板”面板中找到“Image”组件，并将其拖放到设计器中。
+#### 3.编辑控件
+在“调色板”面板中找到“Image”控件，并将其拖放到设计器中。
 
 ![](images/sofdec_ue_0506.png)
 
-在设计器中选择Image组件，在详细面板中展开“Appearance/Brush”，并在“Image”栏中设置视频素材。
+在设计器中选择Image控件，在详细面板中展开“Appearance/Brush”，并在“Image”栏中设置视频素材。
 
 ![](images/sofdec_ue_0507.png)
 
@@ -54,7 +54,7 @@
 | 对象类型                          | 描述                           |
 |-----------------------------------|--------------------------------|
 | Mana（参考Mana Player对象）       | 拥有用于播放视频的Mana播放器。 |
-| Widget（参考FullScreenWidget对象）| 拥有显示视频的组件。           |
+| Widget（参考FullScreenWidget对象）| 拥有显示视频的控件。           |
 
 ![](images/sofdec_ue_0509.png)
 
@@ -82,10 +82,10 @@
 #### 如何在UI中播放视频
 在UI上添加一个按钮。
 
-**组件设计器**<br/>
+**控件设计器**<br/>
 在蓝图中，为“Mana Player”引用添加一个变量，并为点击按钮时的事件添加代码。
 “Stop”按钮调用Mana Pause，“Play”按钮调用Mana ReWind。
-在内容浏览器中，选择“添加”->“用户界面”->“组件蓝图”。
+在内容浏览器中，选择“添加”->“用户界面”->“控件蓝图”。
 
 ![](images/sofdec_ue_0513.png)
 
@@ -117,7 +117,7 @@
 ![](images/sofdec_ue_0519.png)
 
 设置控制模式，使用户能够控制UI。<br/>
-在当前打开的“组件设计器”的右上角选择“图表”。
+在当前打开的“控件设计器”的右上角选择“图表”。
 
 ![](images/sofdec_ue_0520.png)
 
