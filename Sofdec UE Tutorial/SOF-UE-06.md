@@ -54,3 +54,20 @@
 在Component列表中选择Mana。
 
 ![](images/sofdec_ue_0611.png)
+
+要用字幕播放视频，请在Mana详细面板中编辑“Subtitle”部分。
+* 通过打开“Subtitles Enable”来激活字幕。
+* 设置“Subtitles Channel”。
+* 选择用于字幕通道的字符串编码“Subtitles Encoding”（默认为utf-8）。
+
+![](images/sofdec_ue_0612.png)
+
+注册“OnSubtitlesChanged”事件。<br/>
+当事件被触发时，会获取新的字幕，并改变在TextRender中显示的文本。
+
+![](images/sofdec_ue_0613.png)
+
+可以从这里复制蓝图代码：<a href="https://blueprintue.com/blueprint/wp821pfq/" target="_blank">https://blueprintue.com/blueprint/wp821pfq/</a>
+
+![](images/sofdec_ue_0614.png)
+
