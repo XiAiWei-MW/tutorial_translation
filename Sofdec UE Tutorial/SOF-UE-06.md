@@ -71,3 +71,55 @@
 
 ![](images/sofdec_ue_0614.png)
 
+### 在游戏屏幕上显示视频字幕
+UMG控件允许显示多行文字，使字幕更容易阅读。<br/>
+具体步骤如下。
+
+![](images/ue4_sofdec_06_15.png)
+
+#### 1.在场景中添加一个新的UserWidget蓝图
+在内容浏览器中创建一个新的蓝图类。
+
+![](images/sofdec_ue_0615.png)
+
+展开“所有类”并选择“Visual/Widget/UserWidget”。
+
+![](images/sofdec_ue_0616.png)
+
+将资产重命名为“SubtitleWidget”。
+
+![](images/sofdec_ue_0617.png)
+
+#### 2. 在控件设计器中添加一个文本块
+在设计器中，在“面板”下添加一个“Canvas Panel”。
+
+![](images/sofdec_ue_0618.png)
+
+添加“常用” -> “文本”。<br/>
+将文本块放在画布上，并调整大小。<br/>
+要显示带有黑色轮廓的正式字幕，请调整文本块细节中的几个参数，如锚点、字体大小和“Outline Settings”（大小、颜色等）。<br/>
+要在多行上显示字幕，请激活“Auto Wrap Text”。<br/>
+同时，将文本部件设置为变量“Is Variable”，以使其他蓝图能够访问它。
+
+![](images/sofdec_ue_0619.png)
+
+![](images/sofdec_ue_0620.png)
+
+#### 3.更新蓝图
+增加一个变量。
+* Widget（参考SubtitleWidget对象）：拥有在屏幕上显示文本的控件。
+
+![](images/sofdec_ue_0621.png)
+
+在上面创建的蓝图中，改变蓝图以将副标题文本发送到控件的文本块。
+
+![](images/sofdec_ue_0622.png)
+
+可以从这里复制蓝图代码：<a href="https://blueprintue.com/blueprint/tsyxnafa/" target="_blank">https://blueprintue.com/blueprint/tsyxnafa/</a>
+
+结合[“CRI Sofdec入门篇05”](SOF-UE-05.md)，可以在UI中播放带字幕的全屏视频。
+
+### 虚幻引擎手册参考
+* Actor Component：<a href="https://docs.unrealengine.com/5.0/zh-CN/components-in-unreal-engine/" target="_blank">https://docs.unrealengine.com/5.0/zh-CN/components-in-unreal-engine/</a>
+* UMG：<a href="https://docs.unrealengine.com/5.0/zh-CN/umg-ui-designer-for-unreal-engine/" target="_blank">https://docs.unrealengine.com/5.0/zh-CN/umg-ui-designer-for-unreal-engine/</a>
+* TextRender (API)：<a href="https://docs.unrealengine.com/5.0/en-US/BlueprintAPI/Rendering/Components/TextRender/" target="_blank">https://docs.unrealengine.com/5.0/en-US/BlueprintAPI/Rendering/Components/TextRender/</a>
