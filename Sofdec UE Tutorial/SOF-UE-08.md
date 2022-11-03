@@ -129,3 +129,4 @@ CriWare插件进行的色彩空间转换是从SDR到HDR。<br/>
 ### 虚幻引擎手册参考
 关于渲染和材质的更多信息，请参见虚幻文档。
 * 渲染：<a href="https://docs.unrealengine.com/5.0/zh-CN/guidelines-for-optimizing-rendering-for-real-time-in-unreal-engine/" target="_blank">https://docs.unrealengine.com/5.0/zh-CN/guidelines-for-optimizing-rendering-for-real-time-in-unreal-engine/</a>
+* 材质：<a href="https://docs.unrealengine.com/5.0/zh-CN/unreal-engine-materials/" target="_blank">https://docs.unrealengine.com/5.0/zh-CN/unreal-engine-materials/</a>
