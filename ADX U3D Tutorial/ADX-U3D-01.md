@@ -1,50 +1,57 @@
-## 准备篇01：CRIWARE Untiy插件的基础知识
-### 什么是CRIWARE Unity插件？
-CRIWARE Unity插件（以下简称CRIWARE插件）是在Unity上使用以下工具的插件：
-* ADX2（音频播放的中间件）
-* Sofdec2（视频播放的中间件）
-* File Magic PRO (文件管理的中间件)
+## 入门篇01：SDK的获取与导入
+### 需要准备的东西
+* Unity编辑器
+  * 本教程是基于Unity 2017.4 LTS的。
+  * CRIWARE插件可以在Unity 5或更高版本中工作。
+* Unity项目
+  * 请准备一个正在开发的项目或一个新的项目。
+  * 在后面的章节中，将创建一个新项目来进行说明。
+* CRIWARE插件
+  * 可以通过以下方式获得它们。
 
-本教程将介绍在CRIWARE插件中，通过ADX2播放音频的规范步骤。
+### 如何获得CRIWARE的插件
+#### LE版本（CRI ADX2 LE）
+可以从以下页面下载：<br/>
+<a href="https://game.criware.jp/products/adx2-le/" target="_blank">https://game.criware.jp/products/adx2-le/</a>
 
-本节将主要介绍基本知识。如果你想了解实际的使用方法，可以跳过本节。
+#### UP版本（Unity资产商店版本）
+购买页面：<a href="https://assetstore.unity.com/packages/tools/audio/cri-adx2-unity-plugin-assetstore-100086" target="_blank">https://assetstore.unity.com/packages/tools/audio/cri-adx2-unity-plugin-assetstore-100086</a> <br/>
+或者，在商店中搜索“CRIWARE”。
 
-### 关于工作流程
-用CRIWARE插件实现声音的工作流程如下图所示。
+![](images/unity_nyumon_0102.png)
 
-首先，以声音数据（WAV数据）的形式准备所需数量的音频材料。<br/>
-使用CRI Atom Craft创作工具为Unity构建CRI ADX2数据。<br/>
-将建立的声音数据导入Untiy项目。<br/>
-最后，通过对场景进行初始化设置并将用C#编写的类组件贴到游戏对象上，就可以进行声音播放。<br/>
-声音播放是通过CRI ADX2 C#封装API控制的。
+#### Pro版（CRI ADX2）
+请使用以下表格与我们联系。<br/>
+试用申请表：<a href="http://www.cri-mw.co.jp/contact/game.html" target="_blank">http://www.cri-mw.co.jp/contact/game.html</a>
 
-![](images/unity0101.png)
+### Unity项目中的CRIWARE插件
+#### LE版/Pro版（导入.unitypackage）
+1. 解压缩文件并检查.unitypackage文件的位置（路径：cri\unity\plugin\criware_unity_plugin.unitypackage）
+2. 从Unity编辑器菜单中，选择“Assets > Import Package > Custom Package...”。
 
-### 相关链接
-#### Atom Craft教程
-关于CRI Atom Craft声音创作工具，有一个<a href="file:///D:\Github\blog_translation\ADX%20Tutorial\README.md" target="_blank">专门教程</a>。
+![](images/unity_nyumon_0103.png)
 
-#### 用语集
-<a href="https://game.criware.jp/learn/glossary/" target="_blank">该页面</a>包含用于描述CRI产品的术语表。
+3. 选择.unitypackage
 
-### 关于用CRI Atom Craft建立的声音数据
-当用CRI Atom Craft构建时，会产生一个“.acf ”文件和几个“.acb”和“.awb”文件。<br/>
-这些统称为声音数据。
+![](images/unity_nyumon_0104.png)
 
-#### 什么是ACF文件？
-一个ACF文件是一个扩展名为acf的文件。<br/>
-该文件包含CRI Atom Craft中设置的类别分类、AISAC设置、总线设置等。
+4. 在Unity导入界面按“Import”。
 
-#### 什么是ACB文件？
-ACB文件是一个扩展名为acb的文件。<br/>
-该文件包含CRI Atom Craft中创建的每个CueSheet的二进制信息。<br/>
-设置为“内存播放”的波形数据也被记录在这个文件中。
+![](images/unity_nyumon_0105.png)
 
-#### 什么是AWB文件？
-一个AWB文件是一个扩展名为awb的文件。<br/>
-设置为“流播放”的波形数据被记录在这个文件中。
+通过上述步骤把CRI相关的文件放在资产文件夹下。
 
-### Tips
-#### 怎样才能了解更多关于用CRI Atom Craft建立的声音数据？
-请参考SDK附带的手册中的以下章节：<br/>
-<a href="https://game.criware.jp/manual/adx2_tool/jpn/contents/criatom_tools_atomcraft_tutorial_build.html" target="_blank">创建ACB（CueSheet二进制文件）</a>
+![](images/unity_nyumon_0106.png)
+
+#### UP版
+在Unity编辑器上，在资产商店的CRI插件产品屏幕上按“Download” => “Import”，然后按照上面LE和Pro版本的第四步进行操作。<br/>
+资产文件夹下的配置不同，但在操作上没有区别。
+
+※关于创作工具（AtomCraft）<br/>
+CRIWARE插件播放的音频数据是用一个叫做CRI Atom Craft的创作工具创建的。<br/>
+对于LE/Pro版本，这包括在SDK包中，但对于UP版本，Unity资产商店中只有插件。<br/>
+不过，通过提供购买UP版本的证明（发票/收据），可以从以下支持网站下载。<br/>
+<a href="https://unityplugin.crimiddleware.com/" target="_blank">https://unityplugin.crimiddleware.com/</a>
+
+![](images/unity_nyumon_0107.png)
+
