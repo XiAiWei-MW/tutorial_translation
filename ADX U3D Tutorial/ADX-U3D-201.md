@@ -51,4 +51,13 @@
 
 点击[Button]，现在可以在播放时停止声音。
 
+![](images/unity0506.png)
 
+### Tips
+#### 关于CriAtomSource的函数
+CriAtomSource有多个控制播放的函数。
+本教程中使用了以下两个。
+* CriAtomSource::Play()
+* CriAtomSource::Stop()
+
+更多详情请参考我们的插件手册。
