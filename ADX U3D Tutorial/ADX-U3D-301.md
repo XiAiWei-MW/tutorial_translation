@@ -23,3 +23,6 @@ CriAtomSource和CriAtomExPlayer都可以用来播放CRI声音数据。<br/>
 #### CriAtomSource
 * 当你想使用3D定位，或者是实现简单的音频播放时，CriAtomSource更加合适。
 * CriAtomExPlayer的参数也可以通过访问CriAtomSource的player属性来设置。
+
+#### CriAtomExPlayer
+* 如果你准备了大量的播放器，并需要对个别参数进行设定，或者你想从脚本中执行各种控制，建议使用简单的C#类CriAtomExPlayer。
